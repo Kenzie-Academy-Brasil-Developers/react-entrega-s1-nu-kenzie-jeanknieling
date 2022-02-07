@@ -1,0 +1,55 @@
+.container {
+    font-family: 'Nunito';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 988px;
+    height: 593px;
+}
+
+.loginSection {
+    width: 347px;
+    height: 274px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.loginSection h1 {
+    color: #FFF;
+    font-weight: 900;
+}
+
+.loginSection h1 span {
+    color: #FD377E;
+    font-weight: 900;
+}
+
+.loginSection p {
+    color: #FFF;
+    font-size: 38px;
+    font-weight: 800;
+    text-align: start;
+}
+
+.loginSection span {
+    color: #FFF;
+    font-weight: 400;
+}
+
+.container img {
+    width: 593px;
+    height: 593px;
+}
+
+button {
+    background-color: #FD377E;
+    border: none;
+    width: 241px;
+    height: 48px;
+    border-radius: 5px;
+    color: #FFF;
+    font-family: 'Inter';
+    font-weight: 500;
+}
