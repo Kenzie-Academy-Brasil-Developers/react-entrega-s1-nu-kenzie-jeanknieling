@@ -5,11 +5,16 @@ import './App.css';
 
 function App() {
 
+    const [listTransactions, setListTransactions] = useState([
+        /* { description: "Salário recebido", type: "entrada", value: 2500 },
+        { description: "Conta de luz", type: "saída", value: -150 } */
+      ])
+
     const [page, setPage] = useState(false);
 
     return (
         <div className="App">
-            {page ? <Dashboard setPage={setPage}/> : <Home setPage={setPage}/>}
+            {page ? <Dashboard listTransactions={listTransactions} setListTransactions={setListTransactions} setPage={setPage}/> : <Home setPage={setPage}/>}
         </div>
     );
 }

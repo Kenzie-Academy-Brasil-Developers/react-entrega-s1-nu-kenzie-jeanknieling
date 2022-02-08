@@ -8,19 +8,21 @@ function Home({ setPage }) {
     }
 
     return (
-        <main className='container'>
-            <section className='loginSection'>
-                <h1>
-                    <span>Nu</span> Kenzie
-                </h1>
-                <p>
-                    Centralize o controle das suas finanças 
-                </p>
-                <span>de forma rápida e segura</span>
-                <button onClick={changePage}>Iniciar</button>
-            </section>
-            <img src={NuKenzieHome} alt='Imagem decorativa'/>
-        </main>
+        <div className='bodyHome'>
+            <main className='container'>
+                <section className='loginSection'>
+                    <h1>
+                        <span>Nu</span> Kenzie
+                    </h1>
+                    <p>
+                        Centralize o controle das suas finanças 
+                    </p>
+                    <span>de forma rápida e segura</span>
+                    <button onClick={changePage}>Iniciar</button>
+                </section>
+                <img src={NuKenzieHome} alt='Imagem decorativa'/>
+            </main>
+        </div>
     );
 }
 

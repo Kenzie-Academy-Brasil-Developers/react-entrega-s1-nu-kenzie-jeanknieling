@@ -1,0 +1,80 @@
+.valueFomrContainer form {
+    width: 365px;
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+form p {
+    color: #868E96;
+    font-family: 'Inter';
+    font-size: 12px;
+    text-align: start;
+    margin-left: 25px;
+    margin-top: -20px;
+}
+
+form label {
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 25px;
+}
+
+
+form input {
+    background-color: #F8F9FA;
+    border: none;
+    width: 300px;
+    height: 55px;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+form input:focus {
+    outline: #868E96 solid 2px
+}
+
+form .valueTypeContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input[type="number"] {
+    width: 128px;
+}
+
+form select {
+    color: #868E96;
+    background-color: #F8F9FA;
+    border: none;
+    border-radius: 8px;
+    width: 128px;
+    height: 55px;
+    margin-top: 10px;
+    margin-right: 25px;
+    padding-left: 5px;
+}
+
+form select:focus {
+    outline: #868E96 solid 2px
+}
+
+
+.valueFomrContainer button {
+    width: 315px;
+    height: 48px;
+    margin-left: 25px;
+}
+
+.valueFomrContainer .totalValue {
+    margin-top: 22px;
+    box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+}

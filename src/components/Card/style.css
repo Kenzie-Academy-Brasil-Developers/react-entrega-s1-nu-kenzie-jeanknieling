@@ -1,0 +1,53 @@
+.card {
+    background-color: #F8F9FA;
+    width: 560px;
+    height: 87px;
+    margin-bottom: 32px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .descriptionType {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 2px 15px;
+}
+
+.card .valueButton {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 15px;
+}
+
+.card .description {
+    color: #212529;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.card .type {
+    color: #868E96;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card .value {
+    color: #212529;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.card button {
+    background: url('../images/grayBascket.svg');
+    width: 22px;
+    height: 22px;
+}
+
+.card button:hover {
+    background: url('../images/whiteBascket.svg');
+}

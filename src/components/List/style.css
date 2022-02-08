@@ -1,0 +1,36 @@
+.cardsList {
+    width: 560px;
+    background-color: #FFF;
+}
+
+.cardsList .cardsOptions {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 30px;
+}
+
+.cardsList .cardsOptions p {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.cardsList .filterButtons {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardsList .filterButtons button {
+    font-family: 'Nunito';
+    font-weight: 600;
+    color: #868E96;
+    width: 95px;
+    background-color: #E9ECEF;
+}
+
+.cardsList .pLoading {
+    color: #868E96;
+    margin-bottom: 27px;
+}

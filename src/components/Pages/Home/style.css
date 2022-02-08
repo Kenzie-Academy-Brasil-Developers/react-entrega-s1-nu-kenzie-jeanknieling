@@ -1,3 +1,12 @@
+.bodyHome {
+    background-color: #212529;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     font-family: 'Nunito';
     display: flex;
@@ -13,7 +22,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
+    margin-left: 10px;
 }
 
 .loginSection h1 {
@@ -39,8 +49,8 @@
 }
 
 .container img {
-    width: 593px;
-    height: 593px;
+    max-width: 593px;
+    max-height: 593px;
 }
 
 button {
@@ -52,4 +62,34 @@ button {
     color: #FFF;
     font-family: 'Inter';
     font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+    .loginSection {
+        margin-right: 5px;
+    }
+    .container img {
+        width: 55%;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .loginSection {
+        width: 80%;
+        align-items: center;
+    }
+
+    .loginSection p {
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container img {
+        width: 298px;
+        margin: 0px;
+    }
 }
