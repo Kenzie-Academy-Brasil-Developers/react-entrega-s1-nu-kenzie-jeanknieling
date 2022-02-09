@@ -29,6 +29,7 @@
 .loginSection h1 {
     color: #FFF;
     font-weight: 900;
+    font-size: 24px;
 }
 
 .loginSection h1 span {
@@ -53,7 +54,7 @@
     max-height: 593px;
 }
 
-button {
+.loginSection button {
     background-color: #FD377E;
     border: none;
     width: 241px;
@@ -62,6 +63,8 @@ button {
     color: #FFF;
     font-family: 'Inter';
     font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 @media (max-width: 1000px) {

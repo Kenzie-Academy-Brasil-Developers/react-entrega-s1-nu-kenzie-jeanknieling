@@ -6,21 +6,38 @@ import Card from '../Card'
 function List({ listTransactions, setListTransactions }) {
 
     const [newListTransactions, setNewListTransactions] = useState([]);
+    const [filterShow, setFilterShow] = useState('todos');
 
     function showAll(currentListTransactions) {
-        return currentListTransactions.map((item, index) => <Card listTransactions={listTransactions} key={index} transaction={item} setListTransactions={setListTransactions}/>)
+
+        return (
+
+            currentListTransactions.length === 0 ? loading() :
+            currentListTransactions.map((item, index) => <Card key={index} listTransactions={listTransactions} transaction={item} setListTransactions={setListTransactions} newListTransactions={newListTransactions} setNewListTransactions={setNewListTransactions}/>)
+
+        )
+            
     }
 
     function allFilter() {
+
+        setFilterShow('todos');
         return setNewListTransactions(listTransactions); 
+
     }
     
     function entriesFilter() {
+
+        setFilterShow('entradas');
         return setNewListTransactions(listTransactions.filter(item => item.type === 'Entrada')); 
+
     }
 
     function expensesFilter() {
+
+        setFilterShow('saídas');
         return setNewListTransactions(listTransactions.filter(item => item.type === 'Despesa')); 
+
     }
 
     function loading() {
@@ -33,7 +50,6 @@ function List({ listTransactions, setListTransactions }) {
         )
     }
 
-
     return (
 
         <section className="cardsList">
@@ -41,16 +57,14 @@ function List({ listTransactions, setListTransactions }) {
             <div className="cardsOptions">
                 <p>Resumo financeiro</p>
                 <div className="filterButtons">
-                    <button onClick={allFilter}>Todos</button>
-                    <button onClick={entriesFilter}>Entradas</button>
-                    <button onClick={expensesFilter}>Despesas</button>
+                    <button onClick={allFilter} className={filterShow === "todos" ? "pinkBg" : ""}>Todos</button>
+                    <button onClick={entriesFilter} className={filterShow === "entradas" ? "pinkBg" : ""}>Entradas</button>
+                    <button onClick={expensesFilter} className={filterShow === "saídas" ? "pinkBg" : ""}>Despesas</button>
                 </div>
             </div>
 
             {
-                listTransactions.length === 0 ? loading() : 
-                newListTransactions.length === 0 ? 
-                showAll(listTransactions) : newListTransactions.length === listTransactions.length ? showAll(listTransactions) : showAll(newListTransactions)
+                filterShow === "todos" ? showAll(listTransactions) : showAll(newListTransactions)
             }
             
         </section>

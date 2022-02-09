@@ -36,6 +36,7 @@ form input {
     border-radius: 8px;
     margin-top: 10px;
     padding-left: 15px;
+    cursor: pointer;
 }
 
 form input:focus {
@@ -45,6 +46,7 @@ form input:focus {
 form .valueTypeContainer {
     display: flex;
     justify-content: space-between;
+    margin-top: -20px;
 }
 
 form input[type="number"] {
@@ -61,17 +63,29 @@ form select {
     margin-top: 10px;
     margin-right: 25px;
     padding-left: 5px;
+    cursor: pointer;
 }
 
 form select:focus {
-    outline: #868E96 solid 2px
+    outline: #868E96 solid 2px;
 }
 
 
-.valueFomrContainer button {
+.valueFomrContainer .button {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #FD377E;
     width: 315px;
     height: 48px;
+    margin-bottom: 15px;
     margin-left: 25px;
+    cursor: pointer;
+}
+
+.valueFomrContainer .button:focus {
+    outline: none;
 }
 
 .valueFomrContainer .totalValue {

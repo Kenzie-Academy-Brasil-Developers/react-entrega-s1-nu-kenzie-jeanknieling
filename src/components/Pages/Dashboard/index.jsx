@@ -9,7 +9,7 @@ function Dashboard({ setPage, listTransactions, setListTransactions}) {
     return (
         <div className="bodyDashboard">
             <Header setPage={setPage}/>
-            <main>
+            <main className="dashboardContainer">
                 <section className="valueFomrContainer">
                     <Form listTransactions={listTransactions} setListTransactions={setListTransactions}/>
                     <TotalMoney listTransactions={listTransactions}/>

@@ -1,4 +1,5 @@
-.card {
+.greenBorderCard {
+    border-left: 4px solid #03B898;
     background-color: #F8F9FA;
     width: 560px;
     height: 87px;
@@ -8,7 +9,18 @@
     justify-content: space-between;
 }
 
-.card .descriptionType {
+.grayBorderCard {
+    border-left: 4px solid #E9ECEF;
+    background-color: #F8F9FA;
+    width: 560px;
+    height: 87px;
+    margin-bottom: 32px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardsList .descriptionType {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -17,37 +29,40 @@
     margin: 2px 15px;
 }
 
-.card .valueButton {
+.cardsList .valueButton {
     width: 150px;
     display: flex;
     justify-content: space-between;
     margin: 18px 15px;
 }
 
-.card .description {
+.cardsList .description {
     color: #212529;
     font-size: 16px;
     font-weight: 700;
 }
 
-.card .type {
+.cardsList .type {
     color: #868E96;
     font-size: 16px;
     font-weight: 400;
 }
 
-.card .value {
+.cardsList .value {
     color: #212529;
     font-size: 12px;
     font-weight: 400;
 }
 
-.card button {
+.valueButton .bascketButton {
+    border: none;
+    border-radius: 5px;
     background: url('../images/grayBascket.svg');
     width: 22px;
     height: 22px;
+    cursor: pointer;
 }
 
-.card button:hover {
+.cardsList .bascketButton:hover {
     background: url('../images/whiteBascket.svg');
 }

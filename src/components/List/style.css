@@ -1,5 +1,5 @@
 .cardsList {
-    width: 560px;
+    max-width: 560px;
     background-color: #FFF;
 }
 
@@ -8,6 +8,7 @@
    justify-content: space-between;
    align-items: center;
    margin-bottom: 30px;
+   max-width: 560px;
 }
 
 .cardsList .cardsOptions p {
@@ -23,14 +24,42 @@
 }
 
 .cardsList .filterButtons button {
+    background-color: #E9ECEF;
+    border: none;
+    border-radius: 5px;
     font-family: 'Nunito';
     font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
     color: #868E96;
     width: 95px;
-    background-color: #E9ECEF;
+    height: 48px;
+}
+
+.cardsList .filterButtons .pinkBg {
+    color: #FFF;
+    background-color: #FD377E;
 }
 
 .cardsList .pLoading {
     color: #868E96;
     margin-bottom: 27px;
+    text-align: start;
+}
+
+@media (max-width: 1000px) {
+
+    .cardsList .cardsOptions {
+        width: 100%;
+    }
+
+    .cardsList .cardsOptions p {
+        font-size: 14px;
+    }
+
+    .cardsList .filterButtons {
+        max-width: 200px;
+        padding-right: 25px;
+    }
+
 }

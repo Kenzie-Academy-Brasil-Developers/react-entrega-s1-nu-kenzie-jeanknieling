@@ -4,8 +4,97 @@
     height: 100vh;
 }
 
-main {
+main.dashboardContainer {
     display: flex;
     justify-content: space-around;
     margin-top: 34px;
+}
+
+@media (max-width: 1000px) {
+
+    .bodyDashboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bodyDashboard header {
+        padding: 20px;
+        justify-content: space-around;
+    }
+
+    main.dashboardContainer {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .valueFomrContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-top: 15px;
+        width: 90%;
+    }
+
+    .valueFomrContainer form {
+        max-width: 320px;
+    }
+
+    .valueFomrContainer form label {
+        margin: 12px;
+    }
+
+    .valueFomrContainer img {
+        width: 90%;
+    }
+
+    .valueFomrContainer .totalValue {
+        min-width: 310px;
+        max-height: 50px;
+        margin-left: 0;
+    }
+
+    .valueFomrContainer input {
+        max-width: 275px;
+    }
+
+    .valueTypeContainer {
+        max-width: 320px;
+    }
+
+    .valueTypeContainer label {
+        margin: 12px;
+    }
+
+    section.cardsList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 560px;
+    }
+
+    .cardsList .cardsOptions .filterButtons button {
+        font-size: 13px;
+        min-width: 70px;
+        margin-right: 5px;
+    }
+
+    .cardsList .pLoading {
+        width: 100%;
+        text-align: start;
+    }
+
+    .cardsList img {
+        max-width: 100%;
+    }
+
+    .greenBorderCard {
+        max-width: 320px;
+    }
+
+    .grayBorderCard {
+        max-width: 320px;
+    }
 }

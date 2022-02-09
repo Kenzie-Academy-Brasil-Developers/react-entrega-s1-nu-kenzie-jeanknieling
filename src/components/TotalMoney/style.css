@@ -1,6 +1,6 @@
 .totalValue {
     background-color: #E34981;
-    width: 365px;
+    max-width: 365px;
     height: 68px;
     display: flex;
     justify-content: space-between;
